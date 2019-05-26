@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiceGameAssignment</name>
+    </assembly>
+    <members>
+        <member name="T:DiceGameAssignment.BusinessLogic.GameResult">
+            <summary>
+            GameResult enum - which consists of state of game  win, lost or draw.
+            </summary>
+        </member>
+        <member name="T:DiceGameAssignment.BusinessLogic.NumberGame">
+            <summary>
+            Game consists of rounds, result, list of random numebrs and score
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.#ctor">
+            <summary>
+            default constructor which initiaizes numberlist, rounds and score 
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.StartNewGame">
+            <summary>
+            Method to start new game which sets rounds and score to 0
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.PlayRound">
+            <summary>
+            Method to play a round fills the array with random numbers and increments rounds
+            
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.GetRounds">
+            <summary>
+            Getter for rounds 
+            </summary>
+            <returns>_rounds</returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.GetIndex(System.Int32)">
+            <summary>
+            Getter to get index of the number list 
+            </summary>
+            <param name="i"></param>
+            <returns>Value of the index at i </returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.GetScore">
+            <summary>
+            Getter for to get score 
+            </summary>
+            <returns>_score</returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.CalculateRoundScore">
+             <summary>
+            Calculates round score by the frequency of occurence of each numbers in numberlist 
+            then adds the score each time frequency of each number and retuns the frequency of each numbers in 
+            the number list 
+             
+             </summary>
+             <returns>Frequency of the numbers </returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.UpdateScore(System.Int32)">
+            <summary>
+            Method to update score depends on the score and round score. Each time you get same numbers the old score
+            is added to the current round score.
+            </summary>
+            <param name="RoundScore"></param>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.GetGameResult">
+            <summary>
+            method that gives result of the game 
+            </summary>
+            <returns>_gameResult</returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberGame.SetGameResult">
+            <summary>
+            Method to set game result after 5 rounds includes logic for win, lost and draw depend on the score, 
+            for example if score is less than 90 then it is lost, and if its above 90 its a win and
+            if it inbetween 90 and 100 then its a draw.
+            
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.#ctor(System.Int32)">
+            <summary>
+            NumberList constructo which initializes array, random numbers and range of random numbers from (0,9)
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.FillNumberList">
+            <summary>
+            Method which fills the number list with random number ranging from 0 to 9 
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.CalculateFrequency">
+            <summary>
+            Calculates Frequency checks if numbers are sorted and then calculates the occurence of each number
+            first iterates through array and then checks if numbers at indexes are equals to each other. If they are 
+            it increments the counter. Flag variable acts like boolean it is initialized to false and 
+            if numbers at both index are equal flag variable is true and then checks the next index variable 
+            to see if they both equal to each other if not, it moves on and check the next till end of the array. 
+            At the end it multiplies the frequency by 10 . So if 1 same number = 1 pair = 10 points 2 pair 20 points
+            </summary>
+            <returns>frequency of same numbers </returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.GetNumberAt(System.Int32)">
+            <summary>
+            Method to return index of number 
+            </summary>
+            <param name="index"></param>
+            <returns>Index of Numbers</returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.NumberRange.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Number range for dice with numbers ranging in including lower limit and excluding upper limit
+            </summary>
+            <param name="lowerLimit"></param>
+            <param name="upperLimit"></param>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.NumberRange.GetLowerLimit">
+            <summary>
+            Getter for lower limit of number 
+            </summary>
+            <returns>lowerLimit</returns>
+        </member>
+        <member name="M:DiceGameAssignment.BusinessLogic.NumberList.NumberRange.GetUpperLimit">
+            <summary>
+            Getter for upper limit of the number 
+            </summary>
+            <returns>upperLimit</returns>
+        </member>
+        <member name="F:DiceGameAssignment.Form1.game">
+            <summary>
+            Created instance of game and made it global so that user can multiple click 
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.Form1.Button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Start button starts new game 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DiceGameAssignment.Form1.NextMove_Click(System.Object,System.EventArgs)">
+            <summary>
+            Next move button initializes a round, toString method to convert the integer into string 
+            and generates random numbers . Also includes logic for state of the game 
+            Win, lost and draw depends on how much points you get. Each round the score is updated and added to the
+            total score. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DiceGameAssignment.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DiceGameAssignment.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DiceGameAssignment.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:DiceGameAssignment.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DiceGameAssignment.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DiceGameAssignment.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

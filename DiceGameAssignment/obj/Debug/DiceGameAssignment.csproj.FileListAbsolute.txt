@@ -1,0 +1,11 @@
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.csprojAssemblyReference.cache
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.Form1.resources
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.Properties.Resources.resources
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.csproj.GenerateResource.cache
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\bin\Debug\DiceGameAssignment.exe.config
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\bin\Debug\DiceGameAssignment.exe
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\bin\Debug\DiceGameAssignment.pdb
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.exe
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\obj\Debug\DiceGameAssignment.pdb
+C:\Users\Sher Khan\source\repos\DiceGameAssignment\bin\Debug\DiceGameAssignment.xml
