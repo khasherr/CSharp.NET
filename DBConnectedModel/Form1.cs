@@ -14,7 +14,7 @@ namespace DBConnectedModel
     public partial class Form1 : Form
     {
         private SqlConnection conn = new SqlConnection();
-        private String conString = @"Server=DESKTOP-KD5D2CF\KHANSQL; Database=NetClass1; User=Mike; Password=mike1234";
+        private String conString = @"Server=path_to_db_on_local_mathine; Database= putyourdbname; User=username; Password=dbpassword";
         private SqlCommand cmd;
         public Form1()
         {
