@@ -1,0 +1,9 @@
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\obj\Debug\DBConnectedModel.csprojAssemblyReference.cache
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\obj\Debug\DBConnectedModel.Form1.resources
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\obj\Debug\DBConnectedModel.Properties.Resources.resources
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\obj\Debug\DBConnectedModel.csproj.GenerateResource.cache
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\bin\Debug\DBConnectedModel.exe.config
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\bin\Debug\DBConnectedModel.exe
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\bin\Debug\DBConnectedModel.pdb
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\obj\Debug\DBConnectedModel.exe
+C:\Users\Sher Khan\source\repos\DBConnectedModel\DBConnectedModel\obj\Debug\DBConnectedModel.pdb
