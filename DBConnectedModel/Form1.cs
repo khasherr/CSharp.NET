@@ -40,7 +40,7 @@ namespace DBConnectedModel
             //instantiate sql connection object
             // SqlConnection conn = new SqlConnection();
             //connection string - user must have permission to access the db
-            //conn.ConnectionString = @"Server=DESKTOP-KD5D2CF\KHANSQL; Database=NetClass1; User=Mike; Password=mike1234";
+            //conn.ConnectionString = @"Server=servername; Database=NetClass1; User=username; Password=yourpassword";
 
             conn.ConnectionString = conString;
             SqlCommand cmd = conn.CreateCommand();
